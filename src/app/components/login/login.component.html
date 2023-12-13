@@ -1,0 +1,17 @@
+<form  [formGroup]="LoginForm">
+    <h2>Login</h2>
+    <div>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" formControlName="email" placeholder="Email">
+    </div>
+
+
+    <div>
+        <label for="email">password</label>
+        <input type="password" name="password" id="password" formControlName="password" placeholder="password">
+    </div>
+
+    <button (click)="Login()">Log in!!!!</button>
+    <button (click)="goToRegister()">Register</button>
+
+</form>
